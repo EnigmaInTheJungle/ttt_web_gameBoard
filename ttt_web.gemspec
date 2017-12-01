@@ -5,7 +5,7 @@ require 'ttt_web/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ttt_web_gameBoard"
-  spec.version       = TttWeb::VERSION
+  spec.version       = TttWebGameBoard::VERSION
   spec.authors       = ["Dan Pelensky"]
   spec.email         = ["dan@pelensky.com"]
 

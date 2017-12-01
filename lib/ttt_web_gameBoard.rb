@@ -1,5 +1,5 @@
 require "ttt_web/version"
 
-module TttWeb
+module TttWebGameBoard
   # Your code goes here...
 end

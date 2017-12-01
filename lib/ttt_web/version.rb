@@ -1,3 +1,3 @@
-module TttWeb
+module TttWebGameBoard
   VERSION = "0.4.0"
 end
