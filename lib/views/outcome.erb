@@ -16,7 +16,24 @@
    <% end %>
   </table>
 
-<% button_to 'Close', url: 'http://localhost:3000/rooms/close_room' , params: {serverUrl: 'http://localhost:4567', winnerName: 'player2'}, method: :post %>
+<button value="Close" onclick="sendAfterData"/>
 
 <a href="/"> Play Again? </a>
 
+<script language="JavaScript">
+
+function sendAfterData () {
+    var xhr = new XMLHttpRequest();
+
+    var object = {
+        gameServer: 'http://localhost:4567',
+        winnerPlayer: 'player2'
+    };
+
+    xhr.open("POST", 'localhost:3000/rooms/stop_server', true)
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+
+    xhr.send(JSON.stringify(object));
+}
+
+</script>
